@@ -1,0 +1,71 @@
+PS C:\Users\user\Downloads\archive (5)> & C:/Users/user/anaconda3/python.exe "c:/Users/user/Downloads/archive (5)/main.py"
+==============================================
+          Letter Classification Program
+==============================================
+Name  : EVALINA VANESIA SIMANJUNTAK
+NIM   : 4212301066
+Class : MECHATRONICS 5C MORNING
+==============================================
+
+--- Load Dataset ---
+CSV file loaded successfully.
+Image orientation fixed.
+
+--- Data Sampling ---
+Taking 500 samples per class...
+Sampling complete. Total data for this experiment : 13000 samples.
+
+--- HOG Feature Extraction ---
+Processing images for HOG feature extraction...
+HOG extraction finished in 3.09 seconds.
+HOG feature dataset shape : (13000, 144)
+
+--- Model Evaluation with LOOCV ---
+SVM model prepared with kernel ='linear' and C =1.0
+Validation method: Leave-One-Out (will run 13000 iterations).
+
+===============================================================
+STARTING LOOCV EVALUATION.....)
+===============================================================
+
+LOOCV evaluation finished in 173.88 minutes.
+
+--- Display Performance Results ---
+Accuracy: 82.5077%
+
+Classification Report (Precision, Recall, F1-Score):
+              precision    recall  f1-score   support
+
+           A     0.6732    0.7500    0.7096       500
+           B     0.7784    0.8080    0.7929       500
+           C     0.8614    0.8700    0.8657       500
+           D     0.8437    0.8420    0.8428       500
+           E     0.8494    0.8460    0.8477       500
+           F     0.8228    0.8080    0.8153       500
+           G     0.6732    0.6180    0.6444       500
+           H     0.7927    0.8260    0.8090       500
+           I     0.6469    0.6780    0.6621       500
+           J     0.8628    0.8300    0.8461       500
+           K     0.9087    0.8760    0.8921       500
+           L     0.7151    0.7380    0.7264       500
+           M     0.8777    0.8900    0.8838       500
+           N     0.7898    0.7440    0.7662       500
+           O     0.8687    0.9260    0.8964       500
+           P     0.9140    0.9140    0.9140       500
+           Q     0.6680    0.6840    0.6759       500
+           R     0.8122    0.7960    0.8040       500
+           S     0.9283    0.9060    0.9170       500
+           T     0.8360    0.8460    0.8410       500
+           U     0.8599    0.8840    0.8718       500
+           V     0.8700    0.8700    0.8700       500
+           W     0.8669    0.8600    0.8635       500
+           X     0.9194    0.8900    0.9045       500
+           Y     0.8904    0.8120    0.8494       500
+           Z     0.9572    0.9400    0.9485       500
+
+    accuracy                         0.8251     13000
+   macro avg     0.8264    0.8251    0.8254     13000
+weighted avg     0.8264    0.8251    0.8254     13000
+
+Generating Confusion Matrix plot...
+Confusion Matrix plot saved as 'CONFUSION_MATRIX_LOOCV_EVALINA.png'
